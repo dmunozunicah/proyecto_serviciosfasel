@@ -6,6 +6,8 @@ import galeriaData from "./src/data/galeria.js";
 import testimoniosData from "./src/data/testimonios.js";
 
 export default defineConfig({
+  base: "/proyecto_serviciosfasel/",
+
   plugins: [
     handlebars({
       partialDirectory: resolve(
@@ -17,7 +19,7 @@ export default defineConfig({
         if (pagePath === "/productos.html") {
           return productosData;
         }
-        
+
         if (pagePath === "/galeria.html") {
           return galeriaData;
         }
@@ -37,7 +39,8 @@ export default defineConfig({
         main: resolve(import.meta.dirname, "index.html"),
         productos: resolve(import.meta.dirname, "productos.html"),
         galeria: resolve(import.meta.dirname, "galeria.html"),
-        productos: resolve(import.meta.dirname, "productos.html"),
+        nosotros: resolve(import.meta.dirname, "nosotros.html"),
+        preguntas: resolve(import.meta.dirname, "preguntas.html"),
         testimonios: resolve(import.meta.dirname, "testimonios.html")
       }
     }
