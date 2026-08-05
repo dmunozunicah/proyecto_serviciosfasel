@@ -1,0 +1,25 @@
+.navbar {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        li {
+            a {
+                color: @secondary-color;
+                font-weight: bold;
+                padding: 0.5rem 0px;
+
+                &:hover {
+                    color: @primary-color;
+                    border-bottom: 3px solid @accent-background-color;
+                }
+            }
+
+            .active {
+                color: @primary-color;
+                border-bottom: 3px solid @accent-background-color;
+            }
+        }
+    }
+}

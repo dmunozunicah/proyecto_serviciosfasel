@@ -1,0 +1,26 @@
+.header {
+    background-color: @primary-background-color;
+    border-bottom: 1px solid lighten(@secondary-background-color, 60%);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    .header-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0px;
+
+        .header-logo {
+            display: block;
+
+            img {
+                width: 160px;
+            }
+        }
+
+        .header-button {
+            margin-left: 1rem;
+        }
+    }
+}

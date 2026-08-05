@@ -1,0 +1,131 @@
+.products-main {
+  background-image: linear-gradient(
+    lighten(@primary-color, 52%),
+    @primary-background-color
+  );
+}
+
+.products-hero {
+  padding: 4rem 0 2rem;
+  background-color: transparent;
+
+  span {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: @primary-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    color: @secondary-color;
+    font-size: 2.4rem;
+  }
+
+  p {
+    color: @muted-text-color;
+    line-height: 1.6;
+  }
+}
+
+.products-section {
+  padding: 2rem 0 5rem;
+  background-color: transparent;
+}
+
+.products-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(0, 120, 185, 0.15);
+  border-top: 5px solid @accent-background-color;
+  border-radius: 14px;
+  background-color: @primary-background-color;
+  box-shadow: 0 0.75rem 2rem rgba(0, 63, 104, 0.15);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2.5rem rgba(0, 63, 104, 0.2);
+  }
+}
+
+.product-card-image {
+  width: 100%;
+  height: 250px;
+  padding: 1rem;
+  background-color: @primary-background-color;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+.product-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: @secondary-color;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: @primary-text-color;
+    line-height: 1.5;
+  }
+
+  strong {
+    color: @secondary-color;
+  }
+
+  .button {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .products-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .products-hero {
+    padding: 3rem 0 1.5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .products-section {
+    padding: 1.5rem 0 4rem;
+  }
+
+  .products-holder {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card-image {
+    height: 220px;
+  }
+}

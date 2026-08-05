@@ -1,0 +1,31 @@
+.faq {
+  padding: 2rem;
+  background: @primary-background-color;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: @primary-color;
+  }
+
+  .faq-item {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid @muted-text-color;
+    padding-bottom: 1rem;
+
+    h3 {
+      font-weight: bold;
+      cursor: pointer;
+      color: @secondary-color;
+
+      &:hover {
+        color: @accent-color;
+      }
+    }
+
+    p, ul {
+      margin-top: 0.5rem;
+      color: @primary-text-color;
+    }
+  }
+}

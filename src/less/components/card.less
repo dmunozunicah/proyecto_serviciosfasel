@@ -1,0 +1,605 @@
+.cards-holder {
+    background-color: @primary-background-color;
+    padding: 1rem;
+
+    .card {
+        width: 320px;
+        padding: 1rem;
+        border: 1px solid @secondary-background-color;
+        box-shadow: 2px 2px 5px @secondary-background-color;
+        background-color: @accent-background-color;
+        background-image: linear-gradient(
+            @accent-background-color,
+            @primary-background-color
+        );
+        margin: 1rem 0px 0px 0px;
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+
+        .card-header {
+            img {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                object-position: bottom center;
+                border: 4px solid @accent-background-color;
+                border-top-left-radius: 9px;
+                border-top-right-radius: 9px;
+                border-bottom: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+                padding: 0.25rem 0.5rem;
+                background-color: @accent-background-color;
+                margin-top: -4px;
+                border-bottom-left-radius: 9px;
+                border-bottom-right-radius: 9px;
+                font-weight: bold;
+            }
+        }
+
+        .card-footer {
+            .card-footer-big-label {
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+            .card-footer-cta {
+                display: inline-block;
+                padding: 0.5rem 0.7rem;
+                border-radius: 13px;
+                background-color: darken(@accent-background-color, 30%);
+                color: darken(@accent-background-color, 80%);
+                margin-top: 1px;
+            }
+        }
+
+        .card-half {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .card-body {
+                flex: 1;
+                flex-basis: 60%;
+                margin-top: 0.5rem;
+
+                h2 {
+                    font-size: 1rem;
+                    font-weight: normal;
+                    margin: 0.5rem 0px;
+                }
+            }
+
+            .card-footer {
+                flex: 1;
+                flex-basis: 40%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.about-company {
+    padding: 4rem 0px;
+    background-color: @primary-background-color;
+    font-weight: normal;
+
+    .about-company-holder {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .about-information {
+            width: 60%;
+
+            .section-label {
+                color: @primary-color;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: @secondary-color;
+                font-size: 2.2rem;
+                font-weight: 600;
+                margin: 0.5rem 0px 1.5rem 0px;
+            }
+
+            p {
+                color: @muted-text-color;
+                font-weight: normal;
+                line-height: 1.7;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .about-services {
+            width: 35%;
+            padding: 2rem;
+            background-color: @secondary-background-color;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px lighten(@secondary-background-color, 45%);
+
+            h2 {
+                color: @accent-background-color;
+                font-size: 1.7rem;
+                font-weight: 600;
+                margin-top: 0px;
+                margin-bottom: 1.5rem;
+            }
+
+            ul {
+                li {
+                    background-color: lighten(@secondary-background-color, 10%);
+                    color: @secondary-text-color;
+                    font-weight: normal;
+                    padding: 0.9rem 1rem;
+                    margin-bottom: 0.7rem;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+}
+
+.about-values {
+    padding: 4rem 0px;
+    background-color: lighten(@primary-color, 55%);
+    font-weight: normal;
+
+    .about-title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        span {
+            color: @primary-color;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: @secondary-color;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin: 0.5rem 0px;
+        }
+    }
+
+    .about-cards {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .about-card {
+            width: 32%;
+            padding: 2rem;
+            background-color: @primary-background-color;
+            border: 1px solid lighten(@secondary-background-color, 55%);
+            border-radius: 10px;
+            box-shadow: 2px 2px 7px lighten(@secondary-background-color, 50%);
+
+            span {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: @accent-background-color;
+                color: @secondary-color;
+                border-radius: 7px;
+                font-weight: 600;
+            }
+
+            h3 {
+                color: @secondary-color;
+                font-size: 1.4rem;
+                font-weight: 600;
+                margin: 1rem 0px 0.7rem 0px;
+            }
+
+            p {
+                color: @muted-text-color;
+                font-weight: normal;
+                line-height: 1.6;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.contact-section {
+    padding: 4rem 0px;
+    background-color: @secondary-background-color;
+    font-weight: normal;
+
+    .contact-holder {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+
+        .contact-information {
+            width: 45%;
+            color: @secondary-text-color;
+
+            .section-label {
+                color: @accent-background-color;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            h2 {
+                color: @secondary-text-color;
+                font-size: 2.3rem;
+                font-weight: 600;
+                margin: 0.5rem 0px 1rem 0px;
+            }
+
+            p {
+                color: lighten(@secondary-background-color, 60%);
+                font-weight: normal;
+                line-height: 1.7;
+            }
+
+            address {
+                font-style: normal;
+                font-weight: normal;
+                margin-top: 2rem;
+
+                ul {
+                    li {
+                        padding: 0.7rem 0px;
+                        color: @secondary-text-color;
+                        font-weight: normal;
+                        border-bottom: 1px solid lighten(@secondary-background-color, 15%);
+
+                        strong {
+                            color: @accent-background-color;
+                            font-weight: 600;
+                        }
+
+                        a {
+                            color: @secondary-text-color;
+                            font-weight: normal;
+
+                            &:hover {
+                                color: @accent-background-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-form {
+            width: 50%;
+            padding: 2rem;
+            background-color: @primary-background-color;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px darken(@secondary-background-color, 10%);
+
+            .form-group {
+                margin-bottom: 1.2rem;
+
+                label {
+                    display: block;
+                    color: @secondary-color;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 0.9rem;
+                    border: 1px solid lighten(@secondary-background-color, 55%);
+                    border-radius: 7px;
+                    background-color: @primary-background-color;
+                    color: @primary-text-color;
+                    font-weight: normal;
+
+                    &:focus {
+                        outline: none;
+                        border-color: @primary-color;
+                    }
+                }
+
+                textarea {
+                    resize: vertical;
+                }
+            }
+
+            .form-message {
+                color: @accent-color;
+                font-weight: normal;
+            }
+
+            button {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+.faq-hero {
+    background-image: linear-gradient(
+        lighten(@primary-color, 52%),
+        @primary-background-color
+    );
+    padding: 4rem 0px;
+    font-weight: normal;
+
+    .faq-hero-holder {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .faq-hero-info {
+            max-width: 700px;
+
+            span {
+                color: @primary-color;
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                color: @secondary-color;
+                font-size: 3.2rem;
+                font-weight: 600;
+                margin: 1rem 0px;
+
+                strong {
+                    color: @primary-color;
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                color: @muted-text-color;
+                font-size: 1.1rem;
+                font-weight: normal;
+                line-height: 1.6;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.faq {
+    padding: 4rem 0px;
+    background-color: @primary-background-color;
+    font-weight: normal;
+
+    .faq-title {
+        text-align: center;
+        margin-bottom: 2.5rem;
+
+        span {
+            color: @primary-color;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: @secondary-color;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin: 0.5rem 0px;
+        }
+
+        p {
+            color: @muted-text-color;
+            font-weight: normal;
+            max-width: 650px;
+            margin: 0px auto;
+            line-height: 1.6;
+        }
+    }
+
+    .faq-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .faq-item {
+            width: 47%;
+            padding: 1.5rem;
+            background-color: lighten(@primary-color, 55%);
+            border: 1px solid lighten(@secondary-background-color, 55%);
+            border-radius: 7px;
+            box-shadow: 2px 2px 5px lighten(@secondary-background-color, 50%);
+            font-weight: normal;
+
+            h3 {
+                color: @secondary-color;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin-top: 0px;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                color: @muted-text-color;
+                font-weight: normal;
+                line-height: 1.6;
+                margin-bottom: 0.7rem;
+            }
+
+            ul {
+                padding-left: 1.2rem;
+                list-style: disc;
+
+                li {
+                    color: @muted-text-color;
+                    font-weight: normal;
+                    margin-bottom: 0.4rem;
+                }
+            }
+        }
+    }
+}
+.home-options {
+    background-color: lighten(@primary-color, 55%);
+    padding: 4rem 0px;
+
+    .home-options-title {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        span {
+            color: @primary-color;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: @secondary-color;
+            font-size: 2.5rem;
+            margin: 0.5rem 0px;
+        }
+
+        p {
+            color: @muted-text-color;
+            max-width: 650px;
+            margin: 0px auto;
+            line-height: 1.6;
+        }
+    }
+
+    .cards-holder {
+        background-color: transparent;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .card {
+            width: 300px;
+            padding: 1.5rem;
+            margin: 0px;
+            border: 1px solid lighten(@secondary-background-color, 55%);
+            border-radius: 7px;
+            background-color: @primary-background-color;
+            background-image: linear-gradient(
+                @primary-background-color,
+                lighten(@primary-color, 53%)
+            );
+            box-shadow: 2px 2px 5px lighten(@secondary-background-color, 50%);
+            display: flex;
+            flex-direction: column;
+
+            .card-header {
+                img {
+                    width: 100%;
+                    height: auto;
+                    border: none;
+                    border-radius: 7px;
+                }
+
+                span {
+                    width: 55px;
+                    height: 55px;
+                    padding: 0px;
+                    margin: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: lighten(@primary-color, 45%);
+                    color: @primary-color;
+                    border-radius: 7px;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+
+            .card-body {
+                h3 {
+                    color: @secondary-color;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    margin: 1rem 0px 0.5rem 0px;
+                }
+
+                p {
+                    color: @muted-text-color;
+                    font-weight: normal;
+                    line-height: 1.6;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .card-footer {
+                margin-top: auto;
+
+                a {
+                    display: inline-block;
+                    color: @primary-color;
+                    font-weight: bold;
+                    margin-top: 1rem;
+
+                    &:hover {
+                        color: @accent-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .home-options-button {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 2.5rem;
+    }
+}
+
+.featured-options {
+    background-color: @primary-background-color;
+}
+
+.portfolio-options {
+    background-color: lighten(@primary-color, 55%);
+
+    .cards-holder {
+        .portfolio-card {
+            width: 420px;
+        }
+    }
+}
+
+.contact-options {
+    background-color: @secondary-background-color;
+
+    .home-options-title {
+        span {
+            color: @accent-background-color;
+        }
+
+        h2 {
+            color: @secondary-text-color;
+        }
+
+        p {
+            color: lighten(@secondary-background-color, 60%);
+        }
+    }
+
+    .secondary-button {
+        border-color: @secondary-text-color;
+        color: @secondary-text-color;
+
+        &:hover {
+            background-color: @primary-background-color;
+            color: @secondary-color;
+        }
+    }
+}

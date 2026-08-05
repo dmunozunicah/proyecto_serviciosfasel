@@ -1,0 +1,154 @@
+.hero {
+    background-image: linear-gradient(
+        lighten(@primary-color, 52%),
+        @primary-background-color
+    );
+    padding: 5rem 0px;
+
+    .hero-holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .hero-info {
+            width: 55%;
+
+            .hero-label {
+                color: @primary-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            h1 {
+                color: @secondary-color;
+                font-size: 4rem;
+                line-height: 1;
+                margin: 1rem 0px;
+
+                span {
+                    color: @primary-color;
+                    border-bottom: 8px solid @accent-background-color;
+                }
+            }
+
+            p {
+                color: @muted-text-color;
+                font-size: 1.1rem;
+                max-width: 600px;
+            }
+
+            .hero-buttons {
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+            .hero-details {
+                display: flex;
+                gap: 2rem;
+                margin-top: 2.5rem;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    strong {
+                        color: @secondary-color;
+                    }
+
+                    span {
+                        color: @muted-text-color;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+
+        .hero-image {
+            width: 40%;
+            background-color: @primary-background-color;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 3px 3px 10px lighten(@secondary-background-color, 45%);
+
+            img {
+                width: 100%;
+            }
+
+            .hero-card {
+                background-color: @secondary-background-color;
+                color: @secondary-text-color;
+                padding: 1rem;
+                border-radius: 7px;
+                margin-top: 1rem;
+                text-align: center;
+
+                span {
+                    display: block;
+                    color: @accent-background-color;
+                }
+
+                strong {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.about-hero {
+    background-image: linear-gradient(
+        lighten(@primary-color, 52%),
+        @primary-background-color
+    );
+    padding: 4rem 0px;
+
+    .about-hero-holder {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .about-hero-info {
+            width: 55%;
+
+            .section-label {
+                color: @primary-color;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                color: @secondary-color;
+                font-size: 3.5rem;
+                line-height: 1.1;
+                margin: 1rem 0px;
+
+                strong {
+                    display: block;
+                    color: @primary-color;
+                }
+            }
+
+            p {
+                color: @muted-text-color;
+                font-size: 1.1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .about-hero-image {
+            width: 35%;
+
+            img {
+                width: 300px;
+                max-width: 100%;
+                margin: 0px auto;
+                border-radius: 10px;
+                box-shadow: 3px 3px 10px lighten(@secondary-background-color, 45%);
+            }
+        }
+    }
+}
